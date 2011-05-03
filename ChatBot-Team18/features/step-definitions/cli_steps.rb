@@ -6,8 +6,10 @@ Then /^I should see "([^""]*)"$/ do |text|
   assert_partial_output(text)
 end
 
-Given /^I see "([^""]*)"$/ do |arg1|
+Given /^I see "([^""]*)"$/ do |text|
+  assert_partial_output(text)
 end
 
-When /^I type "([^""]*)" and press Enter$/ do |arg1|
+When /^I type "([^""]*)" and press Enter$/ do |text|
+  type(text)
 end

@@ -11,4 +11,10 @@ Scenario: Prompt the user for name
 	Given the application is running
 	And I see "What is your name?"
 	When I type "Tim" and press Enter
-	Then I should see "Hello, Tim!"
+	Then I should see "Hello, Tim"
+
+Feature: Prompt a user for a choice of a game
+	In order to allow them to play a game they like
+	As a friendly user
+	I want to tell the app the game number
+
