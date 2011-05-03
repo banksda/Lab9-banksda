@@ -18,3 +18,40 @@ Feature: Prompt a user for a choice of a game
 	As a friendly user
 	I want to tell the app the game number
 
+Scenario: verify the prompt shows up
+	Given the application is running
+	Then I should see "1: Global Thermonuclear War, 2: Chess, 3: Checkers, 4: Go, 5: Tic Tac Toe"
+
+Scenario: Prompt the user for number 1
+	Given the application is running
+	And I see "1: Global Thermonuclear War, 2: Chess, 3: Checkers, 4: Go, 5: Tic Tac Toe"
+	When I type "1" and press Enter
+	Then I should see "BOOM!"
+
+Scenario: prompt the user for number 2
+	Given the application is running
+	And I see "1: Global Thermonuclear War, 2: Chess, 3: Checkers, 4: Go, 5: Tic Tac Toe"
+	When I type "2" and press Enter
+	Then I should see "NO"
+
+
+Scenario: prompt the user for number 3
+	Given the application is running
+	And I see "1: Global Thermonuclear War, 2: Chess, 3: Checkers, 4: Go, 5: Tic Tac Toe"
+	When I type "3" and press Enter
+	Then I should see "NO"
+
+
+Scenario: prompt the user for number 4
+	Given the application is running
+	And I see "1: Global Thermonuclear War, 2: Chess, 3: Checkers, 4: Go, 5: Tic Tac Toe"
+	When I type "4" and press Enter
+	Then I should see "NO"
+
+
+
+Scenario: prompt the user for number 5
+	Given the application is running
+	And I see "1: Global Thermonuclear War, 2: Chess, 3: Checkers, 4: Go, 5: Tic Tac Toe"
+	When I type "5" and press Enter
+	Then I should see "NO"
